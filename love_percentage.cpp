@@ -56,7 +56,7 @@ int main()
 
 void line( int* line_in , int totx )
 {	
-	int *line_out , emty[totx]={0};
+	int *line_out , emty[100]={0};
 	int toty,i,j;
 	
 	line_out = &emty[0];
