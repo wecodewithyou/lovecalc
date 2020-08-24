@@ -86,6 +86,15 @@ void line( int* line_in , int totx )
 	cout << endl << '\t' << "   ";
 	if ( totx == 2 )
 	{
+		/*for(i=1 ; i>=0 ; i--)
+		{
+			int arr[2];
+			
+			arr[i] = *line_out % 10;			
+			*line_out = *line_out / 10;
+		}*/
+		
+		
 		char choice ;
 		cout << "\n Percentage = " << *line_out << *(line_out +1) << '%' << endl;
 		cout << "\n \n Do you Want to continue (y/n) : ";
@@ -98,7 +107,7 @@ void line( int* line_in , int totx )
 
 		else if ( choice == 'y' || choice == 'Y' )
 		{
-			cout << "\n \n";
+			system("clear");
 			main();
 		}
 
